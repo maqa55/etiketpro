@@ -1,0 +1,277 @@
+#header .box {
+  width: 100px;
+}
+#header ul .s {
+  height: 50px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+#header ul .s option {
+  font-size: 1rem;
+}
+#header ul li .a::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: yellow;
+  width: 0;
+  transition: 0.3s;
+  bottom: -5px;
+  left: 15px;
+}
+#header ul li .a:hover::before {
+  width: 80px;
+}
+#header ul li a {
+  padding: 0 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+}
+#header ul li a::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: yellow;
+  width: 0;
+  transition: 0.3s;
+  bottom: -5px;
+  left: 13px;
+}
+#header ul li a:hover::before {
+  width: 65px;
+}
+
+#footer i {
+  color: yellow;
+  font-size: 1rem;
+  padding-right: 10px;
+}
+#footer .box10 li a {
+  position: relative;
+  z-index: 1;
+  left: 0;
+  transition: 0.3s;
+}
+#footer .box10 li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+  z-index: -1;
+  border-radius: 5px;
+  transition: 0.3s;
+  opacity: 0;
+}
+#footer .box10 li a:hover {
+  color: gray;
+  left: 5px;
+}
+#footer .box10 li a:hover::before {
+  opacity: 1;
+}
+#footer .box9 {
+  width: 220px;
+}
+#footer h5 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: 15px 0;
+  width: 170px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#footer ul {
+  list-style: none;
+}
+#footer ul li:first-child {
+  color: crimson;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+#footer ul li {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 5px 0;
+}
+#footer ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@media (min-width: 576px) {
+  #header .box {
+    width: 150px;
+  }
+  #header ul .s {
+    font-size: 1.2rem;
+  }
+  #header ul .s option {
+    font-size: 1.2rem;
+  }
+  #header ul li a {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
+@media (min-width: 768px) {
+  #header .box {
+    width: 220px;
+  }
+  #header ul .s {
+    font-size: 1.4rem;
+  }
+  #header ul .s option {
+    font-size: 1.4rem;
+  }
+  #header ul li a {
+    font-size: 1.2rem;
+    padding: 0 20px;
+  }
+}
+.box1 {
+  position: relative;
+}
+.box1 h1 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -70%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.box1 img {
+  width: 100%;
+}
+
+#about {
+  padding: 3rem 0;
+}
+#about h2 {
+  color: yellow;
+  font-size: 3rem;
+}
+#about p {
+  color: gray;
+  font-size: 17px;
+}
+
+#products h1 {
+  font-size: 3.2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#products .box2 hr {
+  padding: 10px;
+  margin: auto;
+  width: 250px;
+  color: yellow;
+}
+#products .boxes div img {
+  height: 100%;
+}
+#products .box3 hr {
+  padding: 10px;
+  margin: auto;
+  width: 450px;
+  color: yellow;
+}
+#products .box4 div {
+  margin: auto;
+}
+#products .box4 div img {
+  height: 50vh;
+}
+#products .box5 {
+  padding: 1rem 0;
+}
+#products .box5 hr {
+  padding: 10px;
+  margin: auto;
+  width: 250px;
+  color: yellow;
+}
+#products .box6 {
+  padding: 1rem 0;
+}
+#products .box6 div {
+  margin: auto;
+}
+#products .box6 img {
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+#products .box6 img:hover {
+  filter: grayscale(0);
+}
+
+.box7 {
+  background-image: url(https://etiketpro.az/staticfiles/images/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+.box7 .box8 {
+  height: 100%;
+}
+.box7 .box8 h1 {
+  font-weight: 300;
+  font-size: 1rem;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.box7 .box8 span {
+  font-weight: bold;
+  color: crimson;
+  font-size: 2rem;
+  text-align: center;
+}
+.box7 .box8 span p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  color: white;
+  width: 99%;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .box1 h1 {
+    font-size: 3rem;
+  }
+  .box7 {
+    height: 250px;
+  }
+  .box7 .box8 h1 {
+    font-size: 1.4rem;
+  }
+  .box7 .box8 span {
+    font-size: 3rem;
+  }
+  .box7 .box8 span p {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .box1 h1 {
+    font-size: 4.5rem;
+  }
+  .box7 {
+    height: 300px;
+  }
+  .box7 .box8 h1 {
+    font-size: 3.5rem;
+  }
+  .box7 .box8 span {
+    font-size: 4rem;
+  }
+  .box7 .box8 span p {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=etiket.css.map */
