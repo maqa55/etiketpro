@@ -360,6 +360,9 @@
   .box1 h1 {
     font-size: 4.5rem;
   }
+  .carousel {
+    display: none;
+  }
   .box7 {
     height: 300px;
   }
